@@ -4,8 +4,8 @@ import scrapy
 
 class AirportCodesSpider(scrapy.Spider):
     name = 'airport_codes'
-    allowed_domains = ['http://www.world-airport-codes.com/alphabetical/airport-name/a.html']
-    start_urls = ['http://www.world-airport-codes.com/alphabetical/airport-name/a.html']
+    allowed_domains = ['https://www.world-airport-codes.com/alphabetical/airport-name/a.html']
+    start_urls = ['https://www.world-airport-codes.com/alphabetical/airport-name/a.html']
 
     def parse(self, response):
         data = []
@@ -17,6 +17,5 @@ class AirportCodesSpider(scrapy.Spider):
             data.append({
             'name': name,
             'type': type_,
-
                 })
         return data
