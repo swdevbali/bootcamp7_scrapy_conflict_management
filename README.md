@@ -1,0 +1,1 @@
+# bootcamp7_scrapy_conflict_management
